@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <title>Speisekarte</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -23,10 +22,9 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Page 1</a></li>
             <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
+            <li><a href="#">Page 3</a></li>php access
         </ul>
         WE DO NOT HAVE ADDITION PAGES?-->
-
         </div>
 </nav>
 
@@ -35,7 +33,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-10" id="left-col">
-            <div id="regions_div" style="width: 900px; height: 500px;"></div>
+            <div id="regions_div" style="width: 1500px; height: 600px;"></div>
         </div>
 
         <div class="col-sm-2" id="right-col">
@@ -57,18 +55,13 @@
 </body>
 
 <script type="text/javascript">
-    /**
-     * The setOnLoadCVallback does not work properly...
-     */
     $(document).ready(function() {
         google.charts.load('current', {'packages': ['geochart']});
         google.charts.setOnLoadCallback(drawRegionsMap);
-
     });
 </script>
 
 <script>
-
     $('#button1').on('click', function(){
        updateChart([
             ['Country', 'Popularity'],
