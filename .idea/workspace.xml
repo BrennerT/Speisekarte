@@ -40,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spielwiese.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HTML/spielwiese.html">
+      <file leaf-file-name="WikipediaApiTest.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HTML/WikipediaApiTest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="493">
+              <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -259,11 +259,8 @@
       <recent name="D:\Dokumente\GitHub\Speisekarte" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.spielwiese.html">
+  <component name="RunManager" selected="JavaScript Debug.WikipediaApiTest.html">
     <configuration default="false" name="speisekarte.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Speisekarte/HTML/speisekarte.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Speisekarte/PHP/test.html">
       <method />
     </configuration>
     <configuration default="false" name="test.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Speisekarte/PHP/test.html">
@@ -272,7 +269,10 @@
     <configuration default="false" name="loadWikipedia.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="loadWikipedia.js" working-dir="$PROJECT_DIR$/JS">
       <method />
     </configuration>
-    <configuration default="false" name="spielwiese.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Speisekarte/HTML/spielwiese.html">
+    <configuration default="false" name="WikipediaApiTest.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Speisekarte/HTML/WikipediaApiTest.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="speisekarte.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Speisekarte/HTML/speisekarte.html">
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -333,18 +333,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.speisekarte.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test.html (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.loadWikipedia.js" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.spielwiese.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test.html (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.loadWikipedia.js" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.WikipediaApiTest.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.speisekarte.html (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.spielwiese.html" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.loadWikipedia.js" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test.html (1)" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.speisekarte.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.WikipediaApiTest.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.speisekarte.html (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.loadWikipedia.js" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.test.html (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.speisekarte.html" />
       </list>
     </recent_temporary>
   </component>
@@ -360,18 +360,18 @@
       <updated>1489336813624</updated>
       <workItem from="1489336815014" duration="6867000" />
       <workItem from="1489350094406" duration="2048000" />
-      <workItem from="1489352384273" duration="3231000" />
+      <workItem from="1489352384273" duration="3846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12146000" />
+    <option name="totallyTimeSpent" value="12761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -573,10 +573,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/spielwiese.html">
+    <entry file="file://$PROJECT_DIR$/HTML/WikipediaApiTest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="493">
+          <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding />
         </state>
       </provider>
