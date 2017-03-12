@@ -31,9 +31,9 @@
 </nav>
 
 <button type="button" class="btn btn-default" id="button1">Change Content</button>
-<div class="container-fluid">
-    <div class="row" style="display:flex;">
 
+<div class="container-fluid">
+    <div class="row">
         <div class="col-sm-10" id="left-col">
             <div id="regions_div" style="width: 900px; height: 500px;"></div>
         </div>
@@ -56,31 +56,28 @@
 </div>
 </body>
 
-<script>
-    $(document).ready(function(){
-        var loaded=false;
-        console.log("ready");
-    /*var data = [
-        ['Country', 'Popularity'],
-        ['Germany', 200],
-        ['United States', 300],
-        ['Brazil', 400],
-        ['Canada', 500],
-        ['France', 600],
-        ['RU', 700]];*/
-        if(!loaded){loadGoogle(); loaded=true;}
-        var data = [
-            ['Country', 'Popularity'],
-            ['Germany', 100]];
-    drawRegionsMap(data);});
+<script type="text/javascript">
+    /**
+     * The setOnLoadCVallback does not work properly...
+     */
+    $(document).ready(function() {
+        google.charts.load('current', {'packages': ['geochart']});
+        google.charts.setOnLoadCallback(drawRegionsMap);
+
+    });
 </script>
 
 <script>
-    var data = [
-        ['Country', 'Popularity'],
-        ['Germany', 100]];
+
     $('#button1').on('click', function(){
-       drawRegionsMap(data);
-    });
+       updateChart([
+            ['Country', 'Popularity'],
+            ['Germany', 200],
+            ['United States', 300],
+            ['Brazil', 400],
+            ['Canada', 500],
+            ['France', 600],
+            ['RU', 700]]
+            )})    ;
 </script>
 </html>
