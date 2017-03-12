@@ -17,8 +17,10 @@
 </head>
 
 <body>
+<button type="button" class="btn btn-default" id="button1">Default</button>
 <div class="container">
     <div class="row" style="display:flex;">
+
         <div class="col-sm-10">
             <h1 font-size="62">Speisekarte</h1>
 
@@ -54,5 +56,13 @@
         ['France', 600],
         ['RU', 700]];
     drawRegionsMap(data);
+</script>
+<script>
+    var data = [
+        ['Country', 'Popularity'],
+        ['Germany', 100]];
+    $('#button1').on('click', function(){
+       drawRegionsMap(data);
+    });
 </script>
 </html>
