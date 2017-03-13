@@ -32,23 +32,41 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-10" id="left-col">
-            <div id="regions_div" style="width: 900px; height: 500px;"></div>
+        <div class="col-sm-8" id="left-col">
+            <div id="regions_div" style="width: 700px; height: 500px;"></div>
         </div>
 
-        <div class="col-sm-2" id="right-col">
-            <h1>Banane</h1>
-            <p>Bananen sind sehr lecker und Gesund für dich</p></br>
-            <hr/>
-            <h3>Kommen vor in</h3>
-            <ul>
-                <li> Afrika</li>
-                <li> Panama</li>
-                <li> Indonesien</li>
-            </ul>
-            <hr/>
-            <h3>Beschreibung</h3>
-            <p>Ad mortem festinamus peccare desistamus</p>
+        <div class="col-sm-4" id="right-col">
+            <div id="Klappe">
+                <div id="Suchfeld">
+                    <h2>Obstsuche</h2>
+                    <input type="text" class="form-control input-lg" placeholder="Hier Obst eingeben!" list="früchte" id="suchwert" style="display:inline">
+                    <datalist id="früchte">
+                        <option value="Ananas" />
+                        <option value="Apfel" />
+                        <option value="Banane" />
+                    </datalist>
+                    <span style="display:inline">
+				            <button style="float:right , display:inline" class="btn btn-info btn-lg" type="button" onclick="suchfunktion(document.getElementById('suchwert').value)">
+				            <i class="glyphicon glyphicon-search"></i>
+				            </button>
+			            </span>
+                    </input>
+                </div>
+            </div>
+            <div id="Klappentext"style="display:none">
+                <h1 id="fruchttitel"></h1>
+                <p id="fruchttext"></p></br>
+                <hr/>
+                <h3>Kommen vor in</h3>
+                <p  id="herkunftsliste"></p>
+                <hr/>
+                <h3>Beschreibung</h3>
+                <p id="beschreibung">Hier könnte eine weitere Beschreibung stehen!</p>
+                <button onclick="zurueckzurSuche();">Zurück zur Suche</button>
+            </div>
+        </div>
+    </div>
         </div>
     </div>
 </div>
@@ -72,5 +90,79 @@
             ['France', 600],
             ['RU', 700]]
             )})    ;
+</script>
+<script type="text/javascript">
+    //hier werden 3 Beispielfrüchte erstellt, später kommen die nurnoch aus SQL
+    var banane= {titel:"Banane",text:"Bananen sind sehr lecker und Gesund für dich und miiieech!",herkunft:["Afrika","Panama","Indonesien"]};
+    var apfel={titel:"Apfel",text:"Äpfel gibt es fast überall auf der Welt und das gute steckt in der Schale, oderso", herkunft:["Deutschland","Italien","Amerika"]}
+    var ananas={titel:"Ananas",text:"Ananas (Ja, das ist der Plural), wachsen auf dem Boden und sind eigentlich eine Beere", herkunft:["Indonesien","Karibik"]}
+</script>
+
+<script type="text/javascript">
+    //gefundene Funktion im Internet zum abschicken von PHP Request. Habe es mal aufgehoben
+    $(function() {
+        $('#search').keyup(function() {
+            if($(this).val().length > 0) {
+                $.get("mysqlabfrage.php", {search: $(this).val()}, function(data) {
+                    $("#results").html(data);
+                });
+            }
+        });
+    });
+
+    function zurueckzurSuche(){
+        $('#Suchfeld').fadeIn(1000);
+        $('#Klappentext').hide();
+        document.getElementById('herkunftsliste').innerHtml=null;
+    }
+
+    //Die Funktion, die der Suchknopf aufruft.
+    function suchfunktion(suche){
+        //hier kommen später SQL Abfragen über PHP hin, nicht so hartcodiert. Jedes frucht.titel wird durch den php request ersetzt, aber die Mechanik passt so
+        if(suche==banane.titel){
+            var cntry = [
+                ['Country', 'Anzahl'],
+                ['Indonesia', 200], ,
+                    ['africa', 200],
+                    ['Panama', 200],
+                    ['Kongo', 200],
+                ['Kongo', 200],
+                ];
+            $('#button1').hide();
+            updateChart(cntry);
+            $('#Suchfeld').hide();
+            $('#Klappentext').fadeIn(1000);
+            $('#fruchttitel').text(banane.titel);
+            $('#fruchttext').text(banane.text);
+            var herkunftsanzeige=new String();
+            for (i = 0; i < banane.herkunft.length; i++) {
+                herkunftsanzeige +="<li>" + banane.herkunft[i] + "</li>"+" ";
+            }
+            $('#herkunftsliste').html("<ul>" + herkunftsanzeige + "</ul>");
+        }
+        else if(suche==apfel.titel){
+            $('#Suchfeld').hide();
+            $('#Klappentext').fadeIn(1000);
+            $('#fruchttitel').text(apfel.titel);
+            $('#fruchttext').text(apfel.text);
+            var herkunftsanzeige=new String();
+            for (i = 0; i < apfel.herkunft.length; i++) {
+                herkunftsanzeige +="<li>" + apfel.herkunft[i] + "</li>"+" ";
+            }
+            $('#herkunftsliste').html("<ul>" + herkunftsanzeige + "</ul>");
+        }
+        //lasse ich mal so, damit wir nen vergleich haben ohne Jquery
+        else if(suche==ananas.titel){
+            $('#Suchfeld').hide();
+            $('#Klappentext').show();
+            document.getElementById('fruchttitel').innerHTML=ananas.titel;
+            document.getElementById('fruchttext').innerHTML=ananas.text;
+            var herkunftsanzeige = new String();
+            for (i = 0; i < ananas.herkunft.length; i++) {
+                herkunftsanzeige+="<li>" + ananas.herkunft[i] + "</li>"+" ";
+            }
+            document.getElementById('herkunftsliste').innerHTML=herkunftsanzeige;
+        }
+    }
 </script>
 </html>

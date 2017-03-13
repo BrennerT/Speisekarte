@@ -18,8 +18,8 @@
  */
 function drawRegionsMap() {
     var datas = [
-        ['Country', 'Popularity'],
-        ['Germany', 100]];
+        ['Country', 'Number'],
+        ['Panama', 100]];
     updateChart(datas);
 }
 
