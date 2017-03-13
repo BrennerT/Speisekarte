@@ -8,9 +8,10 @@
 </head>
 <body>
 <p id="div_text"></p>
+
 <script>
-    var suche = "Banane";
-    var url = "https://de.wikipedia.org/w/api.php?action=query&grnnamespace=0&prop=extracts&exsentences=10&format=json&titles="+suche+"&callback=?";
+    var suche = "Banana";
+    var url = "https://simple.wikipedia.org/w/api.php?action=query&grnnamespace=0&prop=extracts&exsentences=10&format=json&titles="+suche+"&callback=?";
     $(document).ready(function () {
         $.ajax({
             type: "GET",
