@@ -11,3 +11,7 @@ right-col{
     height: 230px;
     border: 1px solid lightgray;
 }
+
+.input{
+	border-radius: 20px;
+}
