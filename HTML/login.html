@@ -27,13 +27,18 @@
              </div>
         </nav>
     <div id="login">
-        <form>
+        <form action="speisekarteFormular.html">
             Username </br>
             <input type ="text" id="username" /> <hr/>
             Password </br>
             <input type ="text" id="password" /> <hr/>
-            <button class="btn btn-default"type ="submit">Login</button> 
+            <button class="btn btn-default" type ="submit">Login</button> 
         </form>
     </div>
+
+    <script>
+        $('#login').on('click', function(){
+            window.open("speisekarteFormular.html");
+        });
     </body>
 </html>
