@@ -10,8 +10,9 @@
 <p id="div_text"></p>
 
 <script>
-    var suche = "Banana";
-    var url = "https://simple.wikipedia.org/w/api.php?action=query&grnnamespace=0&prop=extracts&exsentences=10&format=json&titles="+suche+"&callback=?";
+    //https://en.wikipedia.org/w/api.php
+    var suche = "Banane";
+    var url = "https://de.wikipedia.org/w/api.php?action=query&grnnamespace=0&prop=extracts&exsentences=10&format=json&titles="+suche+"&callback=?";
     $(document).ready(function () {
         $.ajax({
             type: "GET",
@@ -23,6 +24,8 @@
                 var pages = data.query.pages;
                 var text = pages[ Object.keys(pages)[0] ].extract;
                 document.getElementById('div_text').innerHTML = text;
+                console.log(text);
+                console.log(pages);
             },
             error: function (errorMessage) {
             }
