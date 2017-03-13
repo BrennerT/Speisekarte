@@ -27,7 +27,7 @@
              </div>
         </nav>
     <div id="login">
-        <form>
+        <form action="speisekarteFormular.html">
             Username </br>
             <input class="input" type ="text" id="username" /> <hr/>
             Password </br>
@@ -35,5 +35,10 @@
             <button class="btn btn-default"type ="submit">Login</button> 
         </form>
     </div>
+
+    <script>
+        $('#login').on('click', function(){
+            window.open("speisekarteFormular.html");
+        });
     </body>
 </html>
