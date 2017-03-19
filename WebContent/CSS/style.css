@@ -1,0 +1,13 @@
+left-col{
+    text-align: center;
+}
+right-col{
+    text-align:center;
+}
+#login{
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    height: 230px;
+    border: 1px solid lightgray;
+}
