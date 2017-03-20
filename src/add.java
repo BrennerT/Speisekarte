@@ -8,16 +8,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class test
+ * Servlet implementation class add
  */
-@WebServlet("/test")
-public class test extends HttpServlet {
+@WebServlet("/add")
+public class add extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+       
     /**
-     * Default constructor. 
+     * @see HttpServlet#HttpServlet()
      */
-    public test() {
+    public add() {
+        super();
         // TODO Auto-generated constructor stub
     }
 
@@ -26,7 +27,6 @@ public class test extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("Das ist ein Servlet Test");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
@@ -35,8 +35,8 @@ public class test extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("POST")	;
-		doGet(request, response);	
+		
+		doGet(request, response);
 	}
 
 }
