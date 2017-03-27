@@ -5,13 +5,13 @@
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <script src="./lib/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <script src="../lib/jquery-3.1.1.min.js" type="text/javascript"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
               integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="./CSS/style.css">
-        <script src="./JS/googleChart.js"></script>
-        <script src="./JS/speisekarteFormular.js"></script>
+        <link rel="stylesheet" href=".. /CSS/style.css">
+        <script src="../JS/googleChart.js"></script>
+        <script src="../JS/speisekarteFormular.js"></script>
     </head>
 
     <body>
@@ -36,12 +36,12 @@
               <div id="regions_div" style="width: 700px; height: 500px;"></div>
           </div>
           <div class="col-sm-2" style="flex:1;text-align: center" >
-            <form>
-                Name:  <input type="text" name="name"/> <hr>
-              Länder: <input type="text"/> <hr>
-                Anzahl: <input type="text"/> <hr>
-              Beschreibung: <input type="text" style="height:100"/> <hr>
-              Wikipedia: <input type="text" id="wikifield"/><hr>
+            <form method="post" action="../add">
+              Name:  <input type="text" name="name"/> <hr>
+              Länder: <input type="text" name="countries"/> <hr>
+              Anzahl: <input type="text" name="count"/> <hr>
+              Beschreibung: <input type="text" name="explanation" style="height:100"/> <hr>
+              Wikipedia: <input type="text" name="wikipedia" id="wikifield"/><hr>
               <input type="submit" id="submitButton"/>
             </form>
           </div>
